@@ -166,7 +166,6 @@
 #         self.hobbies = hobbies
 #     def display_info(self):
 #         print(f"学生信息: 姓名 - {self.name}, 性别 - {self.gender}, 年龄 - {self.age}, 爱好 - {', '.join(self.hobbies)}")
-# # 创建一个Stu类的实例
 # stuA = Stu("张三", "男", 20, ["阅读", "篮球", "编程"])
 # stuA.display_info()
 
@@ -189,7 +188,8 @@
 #         average = self.calculate_average()
 #         print(f"总成绩: {total}")
 #         print(f"平均分: {average:.2f}")
-# grades = StudentGrades(85, 90, 92)
+# java_score,sql_score,web_score = map(int,input().split())
+# grades = StudentGrades(java_score, sql_score, web_score)
 # grades.display_results()
 
 
@@ -226,20 +226,14 @@ print('barf' in 2 * (s + t))结果是：
 """
 4.生成无数字的全字母的字符串
 """
-import random
-import string
-def random_string(length):
-    letters = string.ascii_letters
-    random_string = ''.join(random.choices(letters, k=length))
-    return random_string
-
-length_of_string = int(input("请输入你想要生成的字符串长度: "))
-generated_string = random_string(length_of_string)
-print("生成的随机字符串:", generated_string)
-
-
-
-
-
-
+# import random
+# import string
+# def random_string(length):
+#     letters = string.ascii_letters
+#     random_string = ''.join(random.choices(letters, k=length))
+#     return random_string
+#
+# length_of_string = int(input("请输入你想要生成的字符串长度: "))
+# generated_string = random_string(length_of_string)
+# print("生成的随机字符串:", generated_string)
 
