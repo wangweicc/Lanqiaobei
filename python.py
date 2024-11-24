@@ -197,12 +197,12 @@
 """
 1.判断字符串 a = “welcome to my world” 是否包含单词 b = “world”，包含返回 True，不包含返回 False。
 """
-# a = "welcome to my world"
-# b = "world"
-# if b in a:
-#     print(True)
-# else:
-#     print(False)
+a = "welcome to my world"
+b = "world"
+if b in a:
+    print(True)
+else:
+    print(False)
 
 
 """
