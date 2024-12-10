@@ -197,12 +197,12 @@
 """
 1.判断字符串 a = “welcome to my world” 是否包含单词 b = “world”，包含返回 True，不包含返回 False。
 """
-a = "welcome to my world"
-b = "world"
-if b in a:
-    print(True)
-else:
-    print(False)
+# a = "welcome to my world"
+# b = "world"
+# if b in a:
+#     print(True)
+# else:
+#     print(False)
 
 
 """
@@ -237,3 +237,116 @@ print('barf' in 2 * (s + t))结果是：
 # generated_string = random_string(length_of_string)
 # print("生成的随机字符串:", generated_string)
 
+
+
+# import os
+
+# def list_mp3_files(directory):
+#     for root, dirs, files in os.walk(directory):
+#         for file in files:
+#             if file.endswith(".mp3"):
+#                 print(os.path.join(root, file))
+
+# # 指定目录路径
+# directory = "d:/test"
+
+# # 调用函数
+# list_mp3_files(directory)
+
+
+
+# class Rectangle:
+#     def __init__(self, length, width):
+#         self.length = length
+#         self.width = width
+
+#     def area(self):
+#         return self.length * self.width
+
+#     def perimeter(self):
+#         return 2 * (self.length + self.width)
+
+# # 实例化 Rectangle 类
+# rect = Rectangle(5.2, 3.4)
+
+# # 输出矩形的面积和周长，保留两位小数
+# print(f"矩形的面积是: {rect.area():.2f}")
+# print(f"矩形的周长是: {rect.perimeter():.2f}")
+
+
+# s = 'This reference manual describes the syntax and “core semantics” of the language. It is terse, but attempts to be exact and complete.'
+
+# # 定义元音字母集合
+# vowels = set('aeiouAEIOU')
+
+# # 使用列表推导式生成元音字母列表
+# vowel_count = len([char for char in s if char in vowels])
+
+# print(f"字符串中元音字母的个数是: {vowel_count}")
+
+
+
+# s = 'This reference manual describes the syntax and “core semantics” of the language. It is terse, but attempts to be exact and complete.'
+
+# # 将字符串转换成列表
+# s_list = list(s)
+
+# # 使用正向切片从第二位开始，隔两位取到n-1位
+# s_list = s_list[1:-1:2]
+
+# # 使用反向切片让列表倒序
+# s_list = s_list[::-1]
+
+# print(s_list)
+
+
+
+
+# s = 'This reference manual describes the syntax and “core semantics” of the language. It is terse, but attempts to be exact and complete.'
+
+# # 使用find函数获取syntax的位置信息
+# syntax_index_find = s.find('syntax')
+# print(f"使用find函数获取syntax的位置信息: {syntax_index_find}")
+
+# # 使用index函数获取syntax的位置信息
+# syntax_index_index = s.index('syntax')
+# print(f"使用index函数获取syntax的位置信息: {syntax_index_index}")
+
+# # 使用正则表达式将language单词替换成python
+# import re
+# s_replaced = re.sub(r'\blanguage\b', 'python', s)
+# print(f"替换后的字符串: {s_replaced}")
+
+
+import random
+
+# 使用列表推导式生成一个包含100个随机整数的列表
+data_list = [random.randint(1, 1000) for _ in range(100)]
+
+# 添加元素
+new_element = 1000
+data_list.append(new_element)
+
+# 删除元素
+element_to_remove = data_list[0]
+data_list.remove(element_to_remove)
+
+# 修改元素
+index_to_modify = 10
+new_value = 2000
+data_list[index_to_modify] = new_value
+
+# 获取最大值、最小值、平均值
+max_value = max(data_list)
+min_value = min(data_list)
+average_value = sum(data_list) / len(data_list)
+
+# 输出列表元素及位置信息
+print("列表元素及位置信息:")
+for index, element in enumerate(data_list):
+    print(f"位置 {index}: {element}")
+
+# 输出最大值、最小值、平均值
+print(f"最大值: {max_value}")
+print(f"最小值: {min_value}")
+print(f"平均值: {average_value:.2f}")
